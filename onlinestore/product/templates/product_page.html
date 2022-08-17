@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>{{title}} {{models}}</title>
 </head>
-<body>
-$END$
+<body style='color:#333333; font-family:monospace'>
+<div>{% include "_navbar.html" %}</div>
+
+<div style="padding: 20px">
+    <h3>PRODUCT PAGE: {{product_name}}</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi asperiores blanditiis consectetur eaque eligendi facere facilis ipsa modi molestiae possimus, quas, qui quisquam? A adipisci dolorem ea enim error ipsum iusto laboriosam, minus qui rem?
+</div>
+
+<div style="padding: 20px; line-height: 180%">
+    <h3>{{title}} {{models}} {{memory}}</h3>
+    MODEL: {{models}} <br>
+    COLOR: {{color}} <br>
+    SCREEN: {{screen}} <br>
+    MEMORY: {{memory}} <br>
+    CAMERA: {{camera}} <br>
+    DIMENSIONS: {{dimensions}} <br>
+    PRICE: {{price}} <br><br>
+    <button type="button" style="padding: 10px; background-color:#CCCCCC; border: none">BUY</button>
+</div>
+
 </body>
 </html>

@@ -1,11 +1,11 @@
 from django.urls import path
+from user.views import user_profile
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', view.homepage),
-    path('<slug:product_name>', view.product),
-    path('profile/<slug:profile>', view.user_profile),
+    path('<slug:username>', user_profile),
 ]
+
+# path('<str:username>', user_profile, name='user_profile'),
 
 
 
